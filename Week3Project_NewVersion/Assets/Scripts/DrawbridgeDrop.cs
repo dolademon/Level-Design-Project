@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DrawbridgeDrop : MonoBehaviour
 {
-    [SerializeField] float rotationAngle, smoothTime;
+    [SerializeField] float ZrotationAngle, YrotationAngle, smoothTime;
 
     private bool lowerBridge;
 
@@ -20,12 +20,11 @@ public class DrawbridgeDrop : MonoBehaviour
         if (lowerBridge)
         {
             //sets rotation
-            Quaternion desiredRotation = Quaternion.Euler(0, 0, rotationAngle);
+            Quaternion desiredRotation = Quaternion.Euler(0, YrotationAngle, ZrotationAngle);
 
             //lerps to desired rotation
             transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotation, smoothTime * Time.deltaTime);
             
-            //transform.Rotate(0, 0, -25 * Time.deltaTime);
         }
     }
 

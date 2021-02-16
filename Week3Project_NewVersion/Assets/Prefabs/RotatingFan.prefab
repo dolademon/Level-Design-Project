@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3421248462041374524}
   - component: {fileID: 7258389283385033005}
   - component: {fileID: 239284050099239482}
-  - component: {fileID: 8284881398194646803}
   - component: {fileID: 6719539689188602413}
   - component: {fileID: 3913947522814354075}
   - component: {fileID: 1291788026629542627}
@@ -99,19 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpd: 25
---- !u!114 &8284881398194646803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5965695778165627761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434ed12be6df7374eae05bc54cb269bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!64 &6719539689188602413
 MeshCollider:
   m_ObjectHideFlags: 0
