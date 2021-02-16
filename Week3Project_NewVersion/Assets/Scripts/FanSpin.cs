@@ -15,7 +15,7 @@ public class FanSpin : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         transform.Rotate(0, rotationSpd * Time.deltaTime, 0);
     }
